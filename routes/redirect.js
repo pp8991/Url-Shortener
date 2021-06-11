@@ -4,6 +4,13 @@ const router = express.Router()
 
 const Url = require('../models/Url')
 
+
+router.get('/', async (req, res) => {
+    const url = await Url.find()
+    res.render('index', { url: url })
+  })
+
+
 // : app.get(/:code)==>end of a string
 // 
 
