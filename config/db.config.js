@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const DB_URI = 'mongodb+srv://taskapp:physics123physics@cluster0.fnugi.mongodb.net/Url-Shortener';
+const DB_URI = 'mongodb://localhost/urlshortener';
 
 mongoose.connect(DB_URI ,{
     useNewUrlParser: true,
